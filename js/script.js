@@ -62,12 +62,10 @@ function isEven(num) {
 var numPC = getRandomNumber(1,5)
 var total = sum(numUser, numPC);
 
-console.log(numPC);
-console.log(numUser);
-console.log(total);
-
 if (isEven(total) && evenOddInput === 'pari'){
     outputElement.innerText = 'Hai scelto pari ' + 'Hai Vinto! Il totale è ' + total;
+} else if (!isEven(total) && evenOddInput === 'dispari') {
+    outputElement.innerText = 'Hai scelto dispari ' + 'Hai Vinto ! Il totale è ' + total;
 } else {
-    outputElement.innerText = 'Hai scelto dispari ' + 'Hai Perso! Il totale è ' + total;
+    outputElement.innerText = "Hai scelto '" + evenOddInput + "' Hai perso ! Il totale è " + total;
 }
