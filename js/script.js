@@ -3,24 +3,25 @@ Chiedere all’utente di inserire una parola Creare una funzione
 per capire se la parola inserita è palindroma
 */
 
-// var inputText = (prompt('inserisci una parola')).toLowerCase();
-// var sentenceOutput = document.getElementById('sentence');
 
-// function revertWord(word){
-//     var wordReversed = word.split('').reverse().join('').toLowerCase();    
-//     return wordReversed;
-// }
+var inputText = (prompt('inserisci una parola')).toLowerCase();
+var sentenceOutput = document.getElementById('sentence');
 
-// function paliCheck (word1, word2){
-//     if(word1 === word2){
-//         sentenceOutput.innerHTML = 'la parola è palindroma';
-//     } else {
-//         sentenceOutput.innerHTML = 'la parola non è palindroma';
-//     }
-// }
+function revertWord(word){
+    var wordReversed = word.split('').reverse().join('').toLowerCase();    
+    return wordReversed;
+}
 
-// var invertedWord = revertWord(inputText);
-// var sentence = paliCheck(inputText, invertedWord)
+function paliCheck (word1, word2){
+    if(word1 === word2){
+        sentenceOutput.innerHTML = 'la parola è palindroma';
+    } else {
+        sentenceOutput.innerHTML = 'la parola non è palindroma';
+    }
+}
+
+var invertedWord = revertWord(inputText);
+var sentence = paliCheck(inputText, invertedWord)
 
 
 /*
@@ -36,10 +37,6 @@ Infine, dichiariamo chi ha vinto.
 var outputElement = document.getElementById('evenorodd');
 var evenOddInput = prompt('scrivi pari o dispari').toLowerCase();
 var numUser = parseInt(prompt('inserisci un numero da 1 a 5')); 
-
-while (numUser >= 1 && numUser < 5 ){
-    numUser = parseInt(prompt('Non hai inserito un numero tra 1 e 5, riprova'));
-}
 
 function getRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min);
