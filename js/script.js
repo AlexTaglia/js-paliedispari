@@ -3,7 +3,7 @@ Chiedere all’utente di inserire una parola Creare una funzione
 per capire se la parola inserita è palindroma
 */
 
-
+/*
 var inputText = (prompt('inserisci una parola')).toLowerCase();
 var sentenceOutput = document.getElementById('sentence');
 
@@ -22,7 +22,7 @@ function paliCheck (word1, word2){
 
 var invertedWord = revertWord(inputText);
 var sentence = paliCheck(inputText, invertedWord)
-
+*/
 
 /*
 Pari e Dispari
@@ -37,6 +37,10 @@ Infine, dichiariamo chi ha vinto.
 var outputElement = document.getElementById('evenorodd');
 var evenOddInput = prompt('scrivi pari o dispari').toLowerCase();
 var numUser = parseInt(prompt('inserisci un numero da 1 a 5')); 
+
+while (numUser > 5 || numUser < 1 ){
+    numUser = parseInt(prompt('Non hai inserito un numero tra 1 e 5, riprova'));
+}
 
 function getRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min);
