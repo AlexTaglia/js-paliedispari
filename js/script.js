@@ -3,7 +3,6 @@ Chiedere all’utente di inserire una parola Creare una funzione
 per capire se la parola inserita è palindroma
 */
 
-/*
 var inputText = (prompt('inserisci una parola')).toLowerCase();
 var sentenceOutput = document.getElementById('sentence');
 
@@ -22,7 +21,6 @@ function paliCheck (word1, word2){
 
 var invertedWord = revertWord(inputText);
 var sentence = paliCheck(inputText, invertedWord)
-*/
 
 /*
 Pari e Dispari
